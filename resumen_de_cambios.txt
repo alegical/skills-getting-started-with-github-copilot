@@ -1,0 +1,21 @@
+Resumen de los cambios realizados
+
+Este proyecto fue configurado como una pequeña aplicación web para gestionar actividades extracurriculares de una escuela. La base del sistema es una API desarrollada con FastAPI que permite consultar las actividades disponibles y registrar la participación de los estudiantes.
+
+Cambios principales:
+
+- Se creó la estructura del proyecto con la carpeta src, donde se ubica la lógica principal de la aplicación.
+- Se implementó un archivo app.py con la API principal.
+- Se configuró la ruta raíz (/) para redirigir a una interfaz estática ubicada en /static/index.html.
+- Se desarrolló el endpoint GET /activities para devolver la lista de actividades con sus detalles y participantes actuales.
+- Se agregó el endpoint POST /activities/{activity_name}/signup para registrar a un estudiante en una actividad específica.
+- Se definieron actividades en memoria, como Chess Club, Programming Class y Gym Class, con descripción, horario, cupo máximo y lista de participantes.
+- Se habilitó la entrega de archivos estáticos para servir la parte visual de la aplicación desde la carpeta static.
+- Se documentó el uso del proyecto en el archivo src/README.md, incluyendo instrucciones de ejecución y endpoints disponibles.
+- Se mantuvo una configuración mínima y clara para iniciar el proyecto con FastAPI y Uvicorn.
+
+Estado general:
+
+El proyecto cumple con una funcionalidad básica de consulta y registro de actividades escolares, con una interfaz simple y una API fácil de probar en el navegador o mediante herramientas como Postman o curl.
+
+En resumen, el cambio principal fue crear una aplicación ligera para gestionar inscripciones a actividades extracurriculares, con una estructura simple, fácil de entender y lista para extenderse en el futuro.
